@@ -1,1 +1,150 @@
-a
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+ body {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 background: #fff;
+}
+ center {
+	 margin: auto;
+	 margin-top: 100px;
+	 width: 50%;
+	 padding: 10px;
+}
+ p {
+	 font-family: 'Outfit', sans-serif;
+	 color: #444;
+}
+ .loading {
+	 transform: scale(0.7);
+	 display: flex;
+	 justify-content: center;
+}
+ .loading div {
+	 width: 1rem;
+	 height: 1rem;
+	 margin: 2rem 0.3rem;
+	 background: #444;
+	 border-radius: 50%;
+	 animation: 0.9s bounce infinite alternate;
+}
+ .loading div:nth-child(2) {
+	 animation-delay: 0.3s;
+}
+ .loading div:nth-child(3) {
+	 animation-delay: 0.6s;
+}
+ @keyframes bounce {
+	 to {
+		 opacity: 0.3;
+		 transform: translate3d(0, -1rem, 0);
+	}
+}
+ .donut {
+	 width: 2rem;
+	 height: 2rem;
+	 margin: 2rem;
+	 border-radius: 50%;
+	 border: 0.3rem solid rgba(68, 68, 68, 0.3);
+	 border-top-color: #444;
+	 animation: 1.5s spin infinite linear;
+}
+ .donut.multi {
+	 border-bottom-color: #444;
+}
+ @keyframes spin {
+	 to {
+		 transform: rotate(360deg);
+	}
+}
+ .ripple {
+	 width: 2rem;
+	 height: 2rem;
+	 margin: 2rem;
+	 border-radius: 50%;
+	 border: 0.3rem solid #444;
+	 transform: translate(50%);
+	 animation: 1s ripple ease-out infinite;
+}
+ @keyframes ripple {
+	 from {
+		 transform: scale(0);
+		 opacity: 1;
+	}
+	 to {
+		 transform: scale(1);
+		 opacity: 0;
+	}
+}
+ .multi-ripple {
+	 width: 2.6rem;
+	 height: 2.6rem;
+	 margin: 2rem;
+}
+ .multi-ripple div {
+	 position: absolute;
+	 width: 2rem;
+	 height: 2rem;
+	 border-radius: 50%;
+	 border: 0.3rem solid #444;
+	 animation: 1.5s ripple infinite;
+}
+ .multi-ripple div:nth-child(2) {
+	 animation-delay: 0.5s;
+}
+ .fancy-spinner {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: 5rem;
+	 height: 5rem;
+}
+ .fancy-spinner div {
+	 position: absolute;
+	 width: 4rem;
+	 height: 4rem;
+	 border-radius: 50%;
+}
+ .fancy-spinner div.ring {
+	 border-width: 0.5rem;
+	 border-style: solid;
+	 border-color: transparent;
+	 animation: 2s fancy infinite alternate;
+}
+ .fancy-spinner div.ring:nth-child(1) {
+	 border-left-color: #444;
+	 border-right-color: #444;
+}
+ .fancy-spinner div.ring:nth-child(2) {
+	 border-top-color: #444;
+	 border-bottom-color: #444;
+	 animation-delay: 1s;
+}
+ .fancy-spinner div.dot {
+	 width: 1rem;
+	 height: 1rem;
+	 background: #444;
+}
+ @keyframes fancy {
+	 to {
+		 transform: rotate(360deg) scale(0.5);
+	}
+}
+ 
+</style>
+
+<center>
+<meta http-equiv="refresh" content="3;url=https://wa.me/5493426301900?text=Hola%2C+quisiera+obtener+más+información.&app_absent=0" />
+
+<img src="https://viviendastecnohouse.com.ar/storage/img/logo.png" alt="Tecnohouse logo">
+
+
+<p>Estamos redirigiendo su consulta...</p>
+<div class="loading">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</center>
